@@ -4,24 +4,43 @@
     justify-content: space-between;
     align-items: center;
     height: 90px;
+    @media (max-width: 720px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: unset;
+        justify-content: unset;
+        align-items: center;
+    }
     &__logo {
         height: 50px;
         margin-left: 100px;
+        @media (max-width: 720px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     &__title {
         color: $color-secondaryText;
         margin-right: 100px;
+        @media (max-width: 720px) {
+            margin-right: unset;
+            text-align: center;
+            font-size: 1.5rem;
+        }
     }
 }
 
 .photographer_section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 60px;
     margin-top: 100px;
     padding-bottom: 5rem;
-    @media (max-width: 992px) {
+    @media (max-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 720px) {
+        grid-template-columns: repeat(1, 1fr);
     }
     & article {
         justify-self: center;

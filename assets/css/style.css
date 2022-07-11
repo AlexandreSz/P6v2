@@ -10,25 +10,52 @@ body {
   align-items: center;
   height: 90px;
 }
+@media (max-width: 720px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: center;
+  }
+}
 .header__logo {
   height: 50px;
   margin-left: 100px;
+}
+@media (max-width: 720px) {
+  .header__logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .header__title {
   color: #901C1C;
   margin-right: 100px;
 }
+@media (max-width: 720px) {
+  .header__title {
+    margin-right: unset;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
 
 .photographer_section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   margin-top: 100px;
   padding-bottom: 5rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .photographer_section {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .photographer_section {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .photographer_section article {
@@ -79,12 +106,30 @@ body {
   margin-bottom: 0;
 }
 
+@media (max-width: 720px) {
+  .header__logo {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .photograph-header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #FAFAFA;
   height: 300px;
   margin: 0 100px;
+}
+@media (max-width: 1024px) {
+  .photograph-header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .photograph-header {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .photograph-header img {
   height: 200px;
@@ -102,6 +147,11 @@ body {
   margin-bottom: auto;
   padding-right: 2rem;
 }
+@media (max-width: 1024px) {
+  .photograph-header .photo {
+    display: none;
+  }
+}
 .photograph-header .info {
   margin-top: auto;
   margin-bottom: auto;
@@ -113,12 +163,27 @@ body {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+@media (max-width: 720px) {
+  .photograph-header .info h2 {
+    text-align: center;
+  }
+}
 .photograph-header .info h3 {
   color: #901C1C;
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
+}
+@media (max-width: 720px) {
+  .photograph-header .info h3 {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .photograph-header .info tag {
+    display: none;
+  }
 }
 
 .contact_button {
@@ -140,7 +205,7 @@ body {
 }
 
 .tri {
-  margin-left: 5.5%;
+  margin: 0 100px;
   padding-top: 1rem;
 }
 .tri label {
@@ -159,7 +224,17 @@ body {
   margin: 0 100px;
   gap: 2rem;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+}
+@media (max-width: 1024px) {
+  .gallerry {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .gallerry {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .gallerry img {
   display: flex;
@@ -322,10 +397,22 @@ form textarea {
   height: 95vh;
   object-fit: cover;
 }
+@media (max-width: 720px) {
+  .content-modal img {
+    width: 50vh;
+    height: 45vh;
+  }
+}
 .content-modal video {
   width: 100vh;
   height: 95vh;
   object-fit: cover;
+}
+@media (max-width: 720px) {
+  .content-modal video {
+    width: 50vh;
+    height: 45vh;
+  }
 }
 
 #modal_btn {
@@ -371,12 +458,24 @@ form textarea {
   border-radius: 0.5rem 0.5rem 0 0;
   box-sizing: border-box;
 }
+@media (max-width: 720px) {
+  .infos {
+    width: 100px;
+    padding: 0;
+    padding-left: 0.8rem;
+  }
+}
 .infos__likes {
   display: flex;
 }
 .infos__likes__icone {
   padding: 0 1.5rem 0 0.5rem;
   padding-top: 1.5rem;
+}
+@media (max-width: 720px) {
+  .infos__price {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

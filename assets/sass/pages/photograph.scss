@@ -1,10 +1,24 @@
 // Profil photograph
+.header__logo {
+    @media (max-width: 720px) {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .photograph-header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: $color-backLightbox;
     height: 300px;
     margin: 0 100px;
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 720px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
     & img {
         height: 200px;
         width: 200px;
@@ -20,6 +34,9 @@
         margin-top: auto;
         margin-bottom: auto;
         padding-right: 2rem;
+        @media (max-width: 1024px) {
+            display: none;
+        }
     }
     & .info {
         margin-top: auto;
@@ -30,6 +47,9 @@
             font-size: 52px;
             margin-top: 0;
             margin-bottom: 1rem;
+            @media (max-width: 720px) {
+                text-align: center;
+            }
         }
         & h3 {
             color: $color-secondaryText;
@@ -37,6 +57,14 @@
             margin-top: 0;
             margin-bottom: 2rem;
             padding-bottom: 1rem;
+            @media (max-width: 720px) {
+                display: none;
+            }
+        }
+        & tag {
+            @media (max-width: 720px) {
+                display: none;
+            }
         }
     }
 }
@@ -61,7 +89,7 @@
 
 // TRI
 .tri {
-    margin-left: 5.5%;
+    margin: 0 100px;
     padding-top: 1rem;
     & label {
         margin-right: 5px;
@@ -81,7 +109,13 @@
     margin: 0 100px;
     gap: 2rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 720px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
     & img {
         display: flex;
         width: 350px;
@@ -248,11 +282,19 @@ form {
         width: 100vh;
         height: 95vh;
         object-fit: cover;
+        @media (max-width: 720px) {
+            width: 50vh;
+            height: 45vh;
+        }
     }
     & video {
         width: 100vh;
         height: 95vh;
         object-fit: cover;
+        @media (max-width: 720px) {
+            width: 50vh;
+            height: 45vh;
+        }
     }
 }
 
@@ -299,11 +341,21 @@ form {
     width: 250px;
     border-radius: 0.5rem 0.5rem 0 0;
     box-sizing: border-box;
+    @media (max-width: 720px) {
+        width: 100px;
+        padding: 0;
+        padding-left: 0.8rem;
+    }
     &__likes {
         display: flex;
         &__icone {
             padding: 0 1.5rem 0 0.5rem;
             padding-top: 1.5rem;
+        }
+    }
+    &__price {
+        @media (max-width: 720px) {
+            display: none;
         }
     }
 }

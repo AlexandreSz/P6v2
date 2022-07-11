@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    &__logo {
+        height: 50px;
+        margin-left: 100px;
+    }
+    &__title {
+        color: $color-secondaryText;
+        margin-right: 100px;
+    }
+}
+
+.photographer_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    margin-top: 100px;
+    padding-bottom: 5rem;
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    & article {
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        & tag {
+            font-size: 12px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        & prix {
+            color: $color-prixJour;
+            font-size: 12px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        & h3 {
+            color: $color-secondaryText;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        & a {
+            justify-self: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+            & img {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                margin-bottom: 0;
+                object-fit: cover;
+                -webkit-box-shadow: 0px 10px 13px -7px #000000, 6px 11px 17px 4px rgba(0, 0, 0, 0.4);
+                box-shadow: 0px 10px 13px -7px #000000, 6px 11px 17px 4px rgba(0, 0, 0, 0.4);
+            }
+            & h2 {
+                color: $color-primaryText;
+                font-size: 36px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

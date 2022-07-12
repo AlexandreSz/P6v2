@@ -67,6 +67,7 @@ export function lightbox() {
 
                 } else if (key.keyCode == "27") {
                     closeLigthBox(modale);
+                    foot.style.display = "flex";
                 }
             }
 

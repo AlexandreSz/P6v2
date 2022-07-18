@@ -265,8 +265,14 @@ form {
     background-color: rgba(255, 255, 255, 1);
     width: 100%;
     & .close {
+        display: flex;
+        position: fixed;
+        border: none;
+        background-color: transparent;
         color: $color-staticBackBtn;
         cursor: pointer;
+        font-size: 1.5rem;
+        right: 5%;
     }
     & .titre {
         color: $color-secondaryText;

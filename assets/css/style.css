@@ -379,8 +379,14 @@ form textarea {
   width: 100%;
 }
 .ligthbox-modal .close {
+  display: flex;
+  position: fixed;
+  border: none;
+  background-color: transparent;
   color: #901C1C;
   cursor: pointer;
+  font-size: 1.5rem;
+  right: 5%;
 }
 .ligthbox-modal .titre {
   color: #901C1C;

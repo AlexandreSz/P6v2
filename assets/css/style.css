@@ -212,10 +212,14 @@ body {
   margin-right: 5px;
 }
 .tri select {
+  font-size: 1rem;
   padding: 0.7rem 0.5rem;
   background-color: #901C1C;
   color: #FFFFFF;
-  outline: none;
+  border: none;
+}
+.tri select option {
+  font-size: 1rem;
 }
 
 .gallerry {

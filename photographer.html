@@ -12,9 +12,9 @@
 
 <body>
     <header class="header">
-        <a href="index.html"> <img src="assets/images/logo.png" alt="Fisheye page d'accueil" class="header__logo" />
+        <a href="index.html"> <img src="assets/images/logo.png" alt="Fisheye page d'accueil" class="header__logo" /></a>
     </header>
-    </a>
+
     <main id="main">
         <div class="photograph-header">
             <button type="button" aria-haspopup="dialog" aria-controls="dialog" class="contact_button" id="open-modal" onclick="displayModal()">Contactez-moi</button>
@@ -22,7 +22,7 @@
         <!-- tri -->
         <div class="tri">
             <label for="tri-select">Trier par :</label>
-            <select name="tri" id="tri-select">
+            <select tabinex="1" name="tri" id="tri-select">
                 <option value="populaire">Popularité</option>
                 <option value="date">Date</option>
                 <option value="titre">Titre</option>
@@ -35,10 +35,10 @@
         <!-- Modal de contact -->
         <div id="contact_modal">
             <div class="modal" role="dialog" aria-modal="true" aria-labelledby="prenom" tabindex="-1" aria-hidden="true">
-                <header class="head-modal" role="document">
+                <header class="head-modal">
 
                 </header>
-                <form action="" method="" id="form">
+                <form id="form">
                     <div class="formData">
                         <label for="prenom">Prénom</label><br>
                         <input class="text-control success" type="text" id="prenom" name="Prenom" aria-required="true" /><br>

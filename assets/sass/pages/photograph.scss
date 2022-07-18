@@ -95,10 +95,14 @@
         margin-right: 5px;
     }
     & select {
+        font-size: 1rem;
         padding: 0.7rem 0.5rem;
         background-color: $color-staticBackBtn;
         color: $color-staticTextBtn;
-        outline: none;
+        border: none;
+        & option {
+            font-size: 1rem;
+        }
     }
 }
 

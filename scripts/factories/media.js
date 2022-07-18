@@ -23,6 +23,7 @@ function mediaFactory(data) {
         i.setAttribute("class", "fa-solid fa-heart");
         i.setAttribute("id", "coeur");
         i.setAttribute("tabindex", "0");
+        i.setAttribute("aria-label", "Appuyez sur enter pour liker");
         const like = document.createElement("like");
         like.setAttribute("class", "like");
         like.setAttribute("aria-label", "likes")

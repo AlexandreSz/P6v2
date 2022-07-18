@@ -451,6 +451,8 @@ form textarea {
 }
 
 .control {
+  border: none;
+  background-color: transparent;
   margin: 0;
   display: flex;
   align-items: center;

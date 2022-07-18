@@ -15,6 +15,9 @@ export function lightbox() {
 
             // On désactive le comportement des liens
             e.preventDefault();
+            // focus sur la modale
+            document.getElementById('prev').focus();
+
             //on ajoute l'image du lien cliqué dans la modale
             const content = modale.querySelector(".content-modal");
             content.src = this.href;
@@ -81,6 +84,7 @@ export function lightbox() {
             close.addEventListener("click", function() {
                 closeLigthBox(modale);
                 foot.style.display = "flex";
+                document.getElementById('gallerry').focus();
             });
         });
     }

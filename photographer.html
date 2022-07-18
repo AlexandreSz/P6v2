@@ -17,7 +17,7 @@
 
     <main id="main">
         <div class="photograph-header">
-            <button type="button" aria-haspopup="dialog" aria-controls="dialog" class="contact_button" id="open-modal" onclick="displayModal()">Contactez-moi</button>
+            <button aria-haspopup="dialog" aria-controls="contact_modal" class="contact_button" id="open-modal" onclick="displayModal()">Contactez-moi</button>
         </div>
         <!-- tri -->
         <div class="tri">
@@ -55,7 +55,7 @@
                         <label for="message">Votre message</label><br>
                         <textarea class="text-control success" id="message" rows="10" name="Message" aria-required="true"></textarea><br>
                     </div>
-                    <button class="contact_button" id="modal-bouton" type="submit" aria-label="Envoyer" aria-required="true">Envoyer</button>
+                    <button class="modal_button" id="modal-bouton" aria-expanded="false" aria-label="Envoyer">Envoyer</button>
                 </form>
             </div>
         </div>

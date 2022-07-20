@@ -87,21 +87,62 @@
 
 // TRI
 .tri {
-    margin: 0 100px;
-    padding-top: 1rem;
+    align-items: center;
     & label {
-        margin-right: 5px;
+        font-weight: bold;
+        margin-left: 5%;
     }
-    & select {
-        font-size: 1rem;
-        padding: 0.7rem 0.5rem;
-        background-color: $color-staticBackBtn;
-        color: $color-staticTextBtn;
-        border: none;
-        & option {
-            font-size: 1rem;
-        }
+}
+
+.tri select {
+    display: none;
+}
+
+.new-select {
+    font-size: 1rem;
+    background-color: #901C1C;
+    position: relative;
+    padding: 1rem;
+    width: 10%;
+    border-radius: 0.5rem;
+    color: white;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 1.5rem;
+        right: 5px;
+        border: 6px solid;
+        border-color: #fff transparent transparent transparent;
+        height: 0;
     }
+    &.active::after {
+        border-color: transparent transparent #fff transparent;
+        top: 1rem;
+    }
+}
+
+.select-items {
+    border-radius: 0.5rem;
+    background-color: #901C1C;
+    color: white;
+    width: 8.4%;
+    margin-left: 8.8%;
+    padding: 1rem;
+    & a {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid white;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+}
+
+.select-hide {
+    display: none;
+}
+
+option:hover {
+    border-radius: 5px;
 }
 
 // Gallerie photograph

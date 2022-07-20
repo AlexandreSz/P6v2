@@ -12,18 +12,13 @@ export function lightbox() {
     // On ajoute l'écouteur click sur les liens
     for (let link of links) {
         link.addEventListener("click", function(e) {
-
             // On désactive le comportement des liens
             e.preventDefault();
-            // focus sur la modale
-            document.getElementById('prev').focus();
-
             //on ajoute l'image du lien cliqué dans la modale
             const content = modale.querySelector(".content-modal");
             content.src = this.href;
             let type = this.dataset.type;
             let titre = this.dataset.title;
-
             if (type == "img") {
                 imgLightBox(content, titre);
             } else {
@@ -77,6 +72,8 @@ export function lightbox() {
             //test affichage modale
             modale.classList.add("show");
             modale.setAttribute('active', '');
+            // focus sur la modale
+            document.getElementById('Lmodal').focus();
             const foot = document.querySelector('.infos');
             foot.style.display = "none";
 
@@ -84,10 +81,11 @@ export function lightbox() {
             close.addEventListener("click", function() {
                 closeLigthBox(modale);
                 foot.style.display = "flex";
-                document.getElementById('gallerry').focus();
+
             });
         });
     }
+
 }
 
 

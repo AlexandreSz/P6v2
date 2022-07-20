@@ -22,7 +22,7 @@
         <!-- tri -->
         <div class="tri">
             <label for="tri-select">Trier par :</label>
-            <select autofocus name="tri" id="tri-select">
+            <select name="tri" id="tri-select">
                 <option value="populaire">Popularité</option>
                 <option value="date">Date</option>
                 <option value="titre">Titre</option>
@@ -34,7 +34,7 @@
         </div>
         <!-- Modal de contact -->
         <div id="contact_modal">
-            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="prenom" tabindex="-1" aria-hidden="true">
+            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="prenom" aria-hidden="true">
                 <header class="head-modal">
 
                 </header>
@@ -60,16 +60,12 @@
             </div>
         </div>
 
-        <div class="ligthbox-modal" id="Lmodal">
-
-            <button class="close"><i class="fa-solid fa-x"></i></button>
-
-
-
+        <div class="ligthbox-modal" id="Lmodal" tabindex="0">
+            <button class="close" tabindex="2"><i class="fa-solid fa-x"></i></button>
             <div class="content-modal" id="track"></div>
             <div class="controls">
-                <button id="prev" class="control prev-slide fa-solid fa-angle-left" aria-label="media précédent"></button>
-                <button id="next" class="control next-slide fa-solid fa-angle-right" aria-label="media suivant"></button>
+                <button id="prev" tabindex="0" class="control prev-slide fa-solid fa-angle-left" aria-label="media précédent"></button>
+                <button id="next" tabindex="1" class="control next-slide fa-solid fa-angle-right" aria-label="media suivant"></button>
             </div>
         </div>
         <!-- footer du main -->

@@ -19,7 +19,7 @@ export function select() {
     // On va boucler sur toutes les options dans le select et les copier dans la div
     for (let option of selectElt.options) {
         // On crée une div pour cette option
-        const newOption = document.createElement("a");
+        const newOption = document.createElement("button");
         newOption.setAttribute("alt", option.innerHTML);
         newOption.setAttribute("aria-label", option.innerHTML);
         newOption.setAttribute("tabIndex", "0");

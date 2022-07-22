@@ -245,12 +245,19 @@ body {
   margin-left: 8.8%;
   padding: 1rem;
 }
-.select-items a {
+.select-items button {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid white;
   cursor: pointer;
   padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+  align-items: center;
+  border-bottom: 1px solid white;
 }
 
 .select-hide {
